@@ -13,7 +13,7 @@ public class TransferTest {
 		PremiumAccount accountNatascha = new PremiumAccount(3047, 758465);
 		Client accountNameNatascha = new Client();
 		accountNameNatascha.setName("Natascha Baptista");
-		accountNatascha.setCustomerName(accountNameNatascha);
+		accountNatascha.setCustomer(accountNameNatascha);
 		System.out.println(accountNatascha.toString());
 		accountNatascha.deposit(500);
 		System.out.println("The balance is " + accountNatascha.getBalance());

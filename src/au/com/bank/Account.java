@@ -4,7 +4,7 @@ public class Account {
 	protected double balance;
 	private int branch;
 	private int number;
-	private Client customerName;
+	private Client customer;
 	private static int accountTotal;
 	
 	public Account(int branch, int number) {
@@ -61,11 +61,11 @@ public class Account {
 		
 	}
 
-	public Client getCustomerName() {
-		return customerName;
+	public Client getCustomer() {
+		return customer;
 	}
 
-	public void setCustomerName(Client customerName) {
-		this.customerName = customerName;
+	public void setCustomer(Client customerName) {
+		this.customer = customerName;
 	}
 }

@@ -12,6 +12,6 @@ public class PremiumAccount extends Account {
 	
 	@Override
 	public String toString() {
-		return "Premium Account Number: " + super.getNumber() + " Client Name: "+ super.getCustomerName().getName();
+		return "Premium Account Number: " + super.getNumber() + " Client Name: "+ super.getCustomer().getName();
 	}
 }

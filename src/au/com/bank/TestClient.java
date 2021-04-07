@@ -6,16 +6,16 @@ public class TestClient {
 		Client clientMarcela = new Client();
 		clientMarcela.setName("Marcela");
 		
-		accountMarcela.setCustomerName(clientMarcela);
+		accountMarcela.setCustomer(clientMarcela);
 		
-		System.out.println(accountMarcela.getCustomerName());
+		System.out.println(accountMarcela.getCustomer());
 		System.out.println(clientMarcela.getName());
-		System.out.println(accountMarcela.getCustomerName().getName());
+		System.out.println(accountMarcela.getCustomer().getName());
 		
 		Account accountPaulo = new Account(1475, 698534);
-		accountPaulo.setCustomerName(new Client());
-		accountPaulo.getCustomerName().setName("Paulo");
-		System.out.println(accountPaulo.getCustomerName().getName());
+		accountPaulo.setCustomer(new Client());
+		accountPaulo.getCustomer().setName("Paulo");
+		System.out.println(accountPaulo.getCustomer().getName());
 
 	}
 

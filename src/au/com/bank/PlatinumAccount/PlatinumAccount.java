@@ -18,7 +18,7 @@ public class PlatinumAccount extends Account {
 	
 	@Override
 	public String toString() {
-		return "Platinum Account Number: " + super.getNumber() + " Client Name: "+ super.getCustomerName().getName();
+		return "Platinum Account Number: " + super.getNumber() + " Client Name: "+ super.getCustomer().getName();
 	}
 
 }
