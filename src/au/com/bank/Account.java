@@ -51,13 +51,21 @@ public class Account {
 	public void setBranch(int branch) {
 		this.branch = branch;
 	}
+
+	public static int getaccountTotal() {
+		return Account.accountTotal;
+	}
+
+	public void setName(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	public Client getCustomerName() {
 		return customerName;
 	}
+
 	public void setCustomerName(Client customerName) {
 		this.customerName = customerName;
-	}
-	public static int getaccountTotal() {
-		return Account.accountTotal;
 	}
 }

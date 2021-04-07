@@ -15,4 +15,10 @@ public class PlatinumAccount extends Account {
 	public double getBalance() {
 		return super.balance;
 	}
+	
+	@Override
+	public String toString() {
+		return "Platinum Account Number: " + super.getNumber() + " Client Name: "+ super.getCustomerName().getName();
+	}
+
 }

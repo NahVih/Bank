@@ -1,6 +1,6 @@
 package au.com.bank;
 public class Client {
-	private String name;
+	protected String name;
 	private String tfn;
 	private String job;
 	
@@ -22,4 +22,5 @@ public class Client {
 	public void setJob(String job) {
 		this.job = job;
 	}
+
 }

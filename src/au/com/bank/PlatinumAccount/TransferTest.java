@@ -6,6 +6,10 @@ public class TransferTest {
 
 	public static void main(String[] args) {
 		Account accountPaulo = new PlatinumAccount(1262, 285796);
+		Client accountNamePaulo = new Client();
+		accountPaulo.setCustomerName(accountNamePaulo);
+		accountNamePaulo.setName("Paulo Silveira");
+		System.out.println(accountPaulo.toString());
 		accountPaulo.deposit(50);
 		accountPaulo.withdraw(20);
 		
