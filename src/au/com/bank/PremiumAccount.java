@@ -1,3 +1,4 @@
+package au.com.bank;
 
 public class PremiumAccount extends Account {
 	public PremiumAccount(int branch, int number) {

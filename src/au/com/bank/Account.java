@@ -1,5 +1,7 @@
+package au.com.bank;
+
 public class Account {
-	private double balance;
+	protected double balance;
 	private int branch;
 	private int number;
 	private Client customerName;

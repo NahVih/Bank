@@ -1,3 +1,4 @@
+package au.com.bank;
 public class TransferTest {
 
 	public static void main(String[] args) {

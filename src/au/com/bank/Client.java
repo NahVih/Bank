@@ -1,3 +1,4 @@
+package au.com.bank;
 public class Client {
 	private String name;
 	private String tfn;
