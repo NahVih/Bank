@@ -28,9 +28,9 @@ public class DoingArrayList {
 		System.out.println(list.size());
 		System.out.println(c2.getBranch());
 		
-		for (int i = 0; i < list.size(); i++) {
-			System.out.println(list.get(i));	
-		}
+	//	for (int i = 0; i < list.size(); i++) {
+	//		System.out.println(list.get(i));	
+	//	}
 		
 		for(Object ref : list) {
 			System.out.println(ref);	
