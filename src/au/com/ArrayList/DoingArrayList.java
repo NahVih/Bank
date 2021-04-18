@@ -1,6 +1,7 @@
 package au.com.ArrayList;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 import au.com.bank.Account;
 import au.com.bank.Client;
@@ -10,7 +11,8 @@ import au.com.bank.PlatinumAccount.PlatinumAccount;
 public class DoingArrayList {
 	
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList();
+		ArrayList<Account> list = new ArrayList<Account>();
+		//LinkedList<Account> list = new LinkedList<Account>();
 		
 		Account c1 = new PlatinumAccount(1245, 999881);
 		Client accountNamePaulo = new Client();
@@ -32,7 +34,7 @@ public class DoingArrayList {
 	//		System.out.println(list.get(i));	
 	//	}
 		
-		for(Object ref : list) {
+		for(Account ref : list) {
 			System.out.println(ref);	
 		}
 		
