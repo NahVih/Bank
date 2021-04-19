@@ -8,24 +8,16 @@ import au.com.bank.Account;
 import au.com.bank.Client;
 import au.com.bank.PlatinumAccount.PlatinumAccount;
 
-class AccountNumberComparator implements Comparator<Account> {
+class AccountStringComparator implements Comparator<Account> {
 
 	@Override
 	public int compare(Account c1, Account c2) {
-		return c1.getNumber() - c2.getNumber();
-																//		if (c1.getNumber() < c2.getNumber()) {
-																//			return -1;
-																//		}
-																//		if (c1.getNumber() > c2.getNumber()) {
-																//			return 1;
-																//		}
-																//		return 0;
-
+		return c1.getCustomer().getName().compareTo(c2.getCustomer().getName());
 	}
 	
 }
 
-public class DoingArrayList {
+public class ComparingStrings {
 	
 	public static void main(String[] args) {
 		ArrayList<Account> list = new ArrayList<Account>();
@@ -69,7 +61,7 @@ public class DoingArrayList {
 		System.out.println("Organized:");
 		
 																//		AccountNumberComparator comparator = new AccountNumberComparator();
-		list.sort(new AccountNumberComparator());
+		list.sort(new AccountStringComparator());
 		
 		for(Account accountTotal : list) {
 			System.out.println(accountTotal);	
